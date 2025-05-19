@@ -26,6 +26,7 @@ import androidx.compose.ui.unit.sp
 import com.deepakjetpackcompose.profileui.R
 import com.deepakjetpackcompose.profileui.ui.theme.boldText
 import com.deepakjetpackcompose.profileui.ui.theme.descText
+import com.deepakjetpackcompose.profileui.ui.theme.major
 
 
 @Composable
@@ -80,7 +81,7 @@ fun Infos(img:Int,name:String,price:String,isShow:Boolean,modifier: Modifier = M
 
         Text(price,
             style = TextStyle(
-                color = Color.White,
+                color = major,
                 fontSize = 16.sp,
                 fontWeight = FontWeight.Normal
             )
@@ -90,7 +91,7 @@ fun Infos(img:Int,name:String,price:String,isShow:Boolean,modifier: Modifier = M
         Icon(
             painter = painterResource(R.drawable.rightarrow),
             contentDescription = null,
-            tint = Color.White,
+            tint = boldText,
             modifier = Modifier.size(24.dp)
         )
     }

@@ -48,21 +48,21 @@ fun ProfilePic(modifier: Modifier = Modifier) {
             contentScale = ContentScale.Crop,
             modifier = Modifier
                 .clip(CircleShape)
-                .size(80.dp)
+                .size(65.dp)
         )
         Spacer(Modifier.width(20.dp))
 
         Column (modifier = Modifier.weight(weight = 1f)){
             Text("Sung jin woo", style = TextStyle(
                 color = boldText,
-                fontSize = 20.sp,
+                fontSize = 18.sp,
                 fontWeight = FontWeight.Bold
             ))
             Spacer(Modifier.height(7.dp))
             Text("member since Dec, 2020",
                 style = TextStyle(
                     color = descText,
-                    fontSize = 20.sp,
+                    fontSize = 17.sp,
                     fontWeight = FontWeight.Normal
                 ))
         }

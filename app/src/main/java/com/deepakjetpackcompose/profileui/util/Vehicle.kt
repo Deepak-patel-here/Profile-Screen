@@ -11,6 +11,7 @@ import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
+import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.shape.CircleShape
@@ -32,6 +33,7 @@ import androidx.compose.ui.unit.sp
 import com.deepakjetpackcompose.profileui.ui.theme.circleEdit
 import com.deepakjetpackcompose.profileui.R
 import com.deepakjetpackcompose.profileui.ui.theme.descText
+import com.deepakjetpackcompose.profileui.ui.theme.major
 import com.deepakjetpackcompose.profileui.ui.theme.vehicle
 
 @Preview
@@ -42,7 +44,8 @@ fun Vehicle(modifier: Modifier = Modifier) {
         .fillMaxWidth()
         .height(130.dp)
         .background(vehicle)
-        .border(1.dp, Color(0xFF252425), RoundedCornerShape(0.dp)),
+        .border(1.dp, Color(0xFF252425), RoundedCornerShape(0.dp))
+        .padding(15.dp),
         verticalAlignment = Alignment.CenterVertically,
         horizontalArrangement = Arrangement.Center){
 
@@ -67,22 +70,22 @@ fun Vehicle(modifier: Modifier = Modifier) {
             Text("get to know your vehicles, inside out",
                 style = TextStyle(
                     color = descText,
-                    fontSize = 16.sp,
+                    fontSize = 14.sp,
                     fontWeight = FontWeight.Normal
                 ))
-            Spacer(Modifier.height(15.dp))
+            Spacer(Modifier.height(10.dp))
             Row (verticalAlignment = Alignment.CenterVertically){
                 Text("CRED garage",
                     style = TextStyle(
-                        color = Color.White,
-                        fontSize = 20.sp,
+                        color = major,
+                        fontSize =18.sp,
                         fontWeight = FontWeight.Normal
                     ))
                 Spacer(Modifier.width(15.dp))
                 Icon(
                     painter = painterResource(R.drawable.rightarrow),
                     contentDescription = null,
-                    tint = Color.White,
+                    tint = major,
                     modifier= Modifier.size(24.dp)
                 )
             }
